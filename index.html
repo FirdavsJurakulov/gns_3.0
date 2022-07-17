@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-white box-border">
+    <div id="navbar" class="w-full h-fit xl:h-36 fixed z-10 bg-white-900/20 flex flex-col xl:flex-row items-center border-b border-gray-900/50 backdrop-blur-3xl p-8 xl:p-0">
+        <div class="mobile-shown w-full xl:w-1/5 flex justify-between items-center h-fit xl:h-full">
+            <div class="nav-logo w-min xl:w-full flex justify-center items-center h-full xl:border-r border-gray-900/50">
+                <a href="#" class="">
+                    <p class="text-xl font-bold"> GNS+</p>
+                </a>
+            </div>
+            <button class="menu-button xl:hidden" data-collapse-toggle="mobile-menu"><i class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+        <div class="xl:px-12 hidden mobile-menu xl:flex justify-between items-center w-full h-full xl:w-3/5 mt-8 xl:mt-0 xl:border-r border-gray-900/50">
+            <ul class="flex flex-col mt-4 w-full xl:w-fit xl:flex-row md:space-x-8 md:mt-0 justify-between items-center gap-x-4 text-xl font-medium gap-y-4">
+                <li><a href="#home" class="transition-colors hover:font-bold 3xl:px-5 3xl:py-1.5 3xl:border-2 rounded-full 3xl:border-transparent 3xl:hover:border-black">Услуги</a></li>
+                <li><a href="#services" class="transition-colors hover:font-bold 3xl:px-5 3xl:py-1.5 3xl:border-2 rounded-full 3xl:border-transparent 3xl:hover:border-black">Почему мы?</a></li>
+                <li><a href="#why_us" class="transition-colors hover:font-bold 3xl:px-5 3xl:py-1.5 3xl:border-2 rounded-full 3xl:border-transparent 3xl:hover:border-black">Новости</a></li>
+                <li><a href="#news" class="transition-colors hover:font-bold 3xl:px-5 3xl:py-1.5 3xl:border-2 rounded-full 3xl:border-transparent 3xl:hover:border-black">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="nav-schedule hidden justify-center xl:w-2/5 xl:flex xl:border-r h-full xl:border-gray-900/50" id="mobile-menu">
+            <ul class="flex flex-col xl:flex-row mt-8 xl:mt-0 justify-center items-center gap-4">
+                <li class="flex items-center gap-x-4"><i class="fa-solid fa-calendar text-2xl"></i><div class="schedule-header text-base font-medium"> Рабочие дни<br> <p class="text-xl font-semibold">Пон-Суб</p></div></li>
+                <li class="flex items-center gap-x-4"><i class="fa-solid fa-clock text-2xl"></i><div class="schedule-header text-base font-medium"> Рабочие часы<br> <p class="text-xl font-semibold">9.00-18.00</p></div></li>
+            </ul>
+        </div>
+        <div class="mobile-menu nav-cta w-full h-full hidden xl:flex justify-center items-center xl:w-1/5 mt-8 xl:mt-0" id="mobile-cta">
+            <button class="cta w-full xl:w-52 h-16 px-4 bg-black text-white"><a href="tel:[number]" class="flex gap-x-4 justify-center items-center"><span class="text-lg">Позвонить</span><i class="fa-solid fa-phone"></i></a></button>
+        </div>
+    </div>
+  
+  
+    <section id="home" class="relative w-full h-screen pt-40 px-8 md:pt-48 xl:pt-80">
+        <div class="text-4xl font-extrabold text-left lg:text-6xl md:text-5xl lg:text-center">
+            Неврологический центр GNS имени<br>профессора
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                Шерзода Дусчанова
+            </span>
+          </div>
+        <div class="tags mt-6 lg:flex lg:justify-center">
+            <ul class="flex w-1/4 flex-wrap lg:items-center flex-col gap-y-2">
+                <li class="flex gap-x-2 text-md">
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">УЗИ</p>
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">Терапевт</p>
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">Пульмонолог</p>
+                </li>
+                <li class="flex gap-x-2  text-md">
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">Кардиолог</p>
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">Невролог</p>
+                    <p class="px-2.5 lg:px-4 py-1.5 bg-green-300 rounded-full font-medium">Педиатр</p>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-bar absolute bottom-0 left-1/2 -translate-x-1/2 flex mb-8 w-full lg:w-2/5 px-8 lg:px-0">
+            <ul class="flex justify-between items-center gap-x-4 w-full text-lg">
+                <li class="font-medium text-lg hidden lg:block"><i class="fa-solid fa-location-dot"></i> Г.Хорезм</li>
+                <li class="flex items-center gap-x-4 -order-1 lg:order-none font-bold text-xl"><img src="src/img/scroll_down.svg" alt=""> Прокрутить вниз</li>
+                <li class="flex items-center gap-x-6 text-3xl"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </div>
+        <img src="src/img/Ellipse_2.svg" class="absolute top-0 left-0 -z-50" alt="">
+        <img src="src/img/Ellipse_3.svg" class="absolute top-0 right-0 -z-50" alt="">
+    </section>
+    <section id="services" class="w-full h-fit px-8 xl:px-40 3xl:px-80 relative">
+        <h3 class="text-left xl:text-center text-3xl font-bold mt-20">Типы услуг, предоставляемые в <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Нашей клинике</span></h3>
+        <div class="services-carousel flex items-center gap-x-4 my-12 w-full overflow-x-scroll scrollbar-thin" id="grab">
+            <div class="service-card min-w-fit h-fit bg-white/60 p-4 backdrop-blur-3xl rounded-2xl border-2 border-gray-300 flex flex-col">
+                <h4 class="text-2xl font-medium mt-2 mb-5">Название услуги</h4>
+                <div class="w-80 h-px bg-gray-600/40 mb-6"></div>
+                <p class="text-lg text-ellipsis overflow-hidden max-w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales imperdiet augue. Morbi tempor eu tellus ac dictum. Nulla ante.</p>
+                <a href="#" class=" w-80 text-center h-12 border-2 border-black rounded-md font-semibold texl-lg hover:bg-black hover:text-white transition-colors mt-4 flex items-center justify-center">Читать дальше</a>
+            </div>
+            <div class="service-card min-w-fit h-fit bg-white/60 p-4 backdrop-blur-3xl rounded-2xl border-2 border-gray-300 flex flex-col">
+                <h4 class="text-2xl font-medium mt-2 mb-5">Название услуги</h4>
+                <div class="w-80 h-px bg-gray-600/40 mb-6"></div>
+                <p class="text-lg text-ellipsis overflow-hidden max-w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales imperdiet augue. Morbi tempor eu tellus ac dictum. Nulla ante.</p>
+                <a href="#" class=" w-80 text-center h-12 border-2 border-black rounded-md font-semibold texl-lg hover:bg-black hover:text-white transition-colors mt-4 flex items-center justify-center">Читать дальше</a>
+            </div>
+            <div class="service-card min-w-fit h-fit bg-white/60 p-4 backdrop-blur-3xl rounded-2xl border-2 border-gray-300 flex flex-col">
+                <h4 class="text-2xl font-medium mt-2 mb-5">Название услуги</h4>
+                <div class="w-80 h-px bg-gray-600/40 mb-6"></div>
+                <p class="text-lg text-ellipsis overflow-hidden max-w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales imperdiet augue. Morbi tempor eu tellus ac dictum. Nulla ante.</p>
+                <a href="#" class=" w-80 text-center h-12 border-2 border-black rounded-md font-semibold texl-lg hover:bg-black hover:text-white transition-colors mt-4 flex items-center justify-center">Читать дальше</a>
+            </div>
+            <div class="service-card min-w-fit h-fit bg-white/60 p-4 backdrop-blur-3xl rounded-2xl border-2 border-gray-300 flex flex-col">
+                <h4 class="text-2xl font-medium mt-2 mb-5">Название услуги</h4>
+                <div class="w-80 h-px bg-gray-600/40 mb-6"></div>
+                <p class="text-lg text-ellipsis overflow-hidden max-w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales imperdiet augue. Morbi tempor eu tellus ac dictum. Nulla ante.</p>
+                <a href="#" class=" w-80 text-center h-12 border-2 border-black rounded-md font-semibold texl-lg hover:bg-black hover:text-white transition-colors mt-4 flex items-center justify-center">Читать дальше</a>
+            </div>
+            <div class="service-card min-w-fit h-fit bg-white/60 p-4 backdrop-blur-3xl rounded-2xl border-2 border-gray-300 flex flex-col">
+                <h4 class="text-2xl font-medium mt-2 mb-5">Название услуги</h4>
+                <div class="w-80 h-px bg-gray-600/40 mb-6"></div>
+                <p class="text-lg text-ellipsis overflow-hidden max-w-fit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales imperdiet augue. Morbi tempor eu tellus ac dictum. Nulla ante.</p>
+                <a href="#" class=" w-80 text-center h-12 border-2 border-black rounded-md font-semibold texl-lg hover:bg-black hover:text-white transition-colors mt-4 flex items-center justify-center">Читать дальше</a>
+            </div>
+        </div>
+        <h4 class="text-xl">Ознакомиться с ценами можете <a href="#" class="text-blue-600">тут</a></h4>
+    </section>
+
+    <section id="why_us" class="w-full h-fit py-20 px-8 xl:px-40 3xl:px-80 relative flex justify-center items-center">
+        <div class="why_us-card w-full h-fit bg-white/60 backdrop-blur-3xl rounded-2xl flex flex-col lg:flex-row justify-center items-center p-8 3xl:p-12 gap-x-20 3xl:shadow-lg">
+            <div class="card-image w-3/5 p-5 h-full bg-gray-200/50 hidden lg:flex justify-center items-center rounded-2xl"><img src="src/img/why_us.svg" alt="" class=""></div>
+            <div class="card-desc">
+                <h3 class="text-4xl font-black bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 mb-4">Почему наша клиника?</h3>
+                <ul class="flex flex-col gap-y-4">
+                    <li class="font-medium text-2xl"><i class="fa-solid fa-check text-indigo-600"></i> Высокотехнологичная и современная методика лечения</li>
+                    <li class="font-medium text-2xl"><i class="fa-solid fa-check text-indigo-600"></i> Современное оборудование, отвечающее европейским стандартам</li>
+                    <li class="font-medium text-2xl"><i class="fa-solid fa-check text-indigo-600"></i> Качественный уход за пациентами и наблюдение после операций</li>
+                </ul>
+            </div>
+        </div>
+        <img src="src/img/Ellipse_5.png" alt="" class="absolute top-1/2 -translate-y-1/2 right-0 -z-50 w-4/6">
+        <img src="src/img/Ellipse_6.png" alt="" class="absolute top-1/2 -translate-y-1/2 left-0 -z-50 w-4/6">
+    </section>
+
+    <section id="news" class="py-20 px-4 xl:px-40 3xl:px-80 w-full h-fit">
+        <h3 class="text-3xl font-bold mb-10">Наши последние новости</h3>
+        <div class="news-box grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-8">
+            <div class="news-card h-fit p-5 bg-white/40 rounded-2xl flex flex-col gap-y-5 xl:gap-x-5 shadow-lg">
+                <img src="src/img/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="rounded-2xl w-full">
+                <div class="news-desc">
+                    <div class="news-date text-gray-500">//////</div>
+                    <h4 class="text-xl font-semibold mb-4">Заголовок новости</h4>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida tristique sem non dapibus. Quisque.</p>
+                    <a href="#" class="news-more text-blue-600 font-medium">Читать дальше</a>
+                </div>
+            </div>
+            <div class="news-card h-fit p-5 bg-white/40 rounded-2xl flex flex-col gap-y-5 xl:gap-x-5 shadow-lg">
+                <img src="src/img/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="rounded-2xl w-full">
+                <div class="news-desc">
+                    <div class="news-date text-gray-500">//////</div>
+                    <h4 class="text-xl font-semibold mb-4">Заголовок новости</h4>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida tristique sem non dapibus. Quisque.</p>
+                    <a href="#" class="news-more text-blue-600 font-medium">Читать дальше</a>
+                </div>
+            </div>
+            <div class="news-card h-fit p-5 bg-white/40 rounded-2xl flex flex-col gap-y-5 xl:gap-x-5 shadow-lg">
+                <img src="src/img/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="rounded-2xl w-full">
+                <div class="news-desc">
+                    <div class="news-date text-gray-500">//////</div>
+                    <h4 class="text-xl font-semibold mb-4">Заголовок новости</h4>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida tristique sem non dapibus. Quisque.</p>
+                    <a href="#" class="news-more text-blue-600 font-medium">Читать дальше</a>
+                </div>
+            </div>
+            <div class="news-card h-fit p-5 bg-white/40 rounded-2xl flex flex-col gap-y-5 xl:gap-x-5 shadow-lg">
+                <img src="src/img/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="rounded-2xl w-full">
+                <div class="news-desc">
+                    <div class="news-date text-gray-500">//////</div>
+                    <h4 class="text-xl font-semibold mb-4">Заголовок новости</h4>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida tristique sem non dapibus. Quisque.</p>
+                    <a href="#" class="news-more text-blue-600 font-medium">Читать дальше</a>
+                </div>
+            </div>
+            <div class="news-card h-fit p-5 bg-white/40 rounded-2xl flex flex-col gap-y-5 xl:gap-x-5 shadow-lg">
+                <img src="src/img/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="rounded-2xl w-full">
+                <div class="news-desc">
+                    <div class="news-date text-gray-500">//////</div>
+                    <h4 class="text-xl font-semibold mb-4">Заголовок новости</h4>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida tristique sem non dapibus. Quisque.</p>
+                    <a href="#" class="news-more text-blue-600 font-medium">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-fit bg-indigo-400 flex flex-col justify-between px-3.5 lg:px-40 3xl:px-80 py-2 gap-y-20"> 
+        <div class="footer-columns grid grid-cols-1 lg:grid-cols-4 lg:gap-x-4 gap-y-4">
+            <div class="phone">
+                <h4 class="text-xl font-semibold mb-2">Телефон:</h4>
+                <p class="text-2xl font-bold">+998 (xx) xxx-xx-xx</p>
+            </div>
+            <div class="mail">
+                <h4 class="text-xl font-semibold mb-2">Почта:</h4>
+                <p class="text-2xl font-bold">example@mail.com</p>
+            </div>
+            <div class="schedule flex flex-col xl:flex-row justify-center items-start gap-4">
+                    <li class="flex items-center gap-x-4"><i class="fa-solid fa-calendar text-2xl"></i><div class="schedule-header text-base font-medium"> Рабочие дни<br> <p class="text-xl font-semibold">Пон-Суб</p></div></li>
+                    <li class="flex items-center gap-x-4"><i class="fa-solid fa-clock text-2xl"></i><div class="schedule-header text-base font-medium"> Рабочие часы<br> <p class="text-xl font-semibold">9.00-18.00</p></div></li>
+            </div>
+            <div class="social-media flex gap-x-4 items-start justify-center">
+                <h4 class="font-semibold text-xl">Наши соц. сети:</h4>
+                <div class="flex items-center gap-x-6 text-3xl"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom flex w-full gap-x-4 justify-between">
+            <div class="logo font-medium text-lg">
+                GNS+
+            </div>
+            <div class="copyright-text font-medium text-lg">
+                Copyright © 2022 GNS+  Все права защищены
+            </div>
+        </div>
+    </footer>
+    <script>
+        const slider = document.getElementById('grab');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+        });
+
+        const button = document.querySelector('.menu-button'); // Hamburger Icon
+        const menu = document.querySelector('.mobile-menu'); // Menu
+        const menu2 = document.querySelector('#mobile-menu'); // Menu
+        const menu3 = document.querySelector('#mobile-cta'); // Menu
+
+        button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu2.classList.toggle('hidden');
+        menu3.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
